@@ -38,7 +38,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "mean_alpha_fraction": 0.6285293325330542,
+      "mean_alpha_fraction": 0.6285293325330541,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4
@@ -48,4 +48,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `daca4e4db39efd7158ec82dc1d98f452ca6ee4adc8a4851492fbf2f8cbde2af6`
+Result SHA-256: `e2aab5b44a6e88ac196205d8a3d9a91643a167c8269c6763406b7439ee842683`
