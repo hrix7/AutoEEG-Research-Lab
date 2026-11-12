@@ -19,7 +19,10 @@
     "conditions": [
       {
         "accepted": 12,
+        "artifact_false_negatives": 0,
+        "artifact_false_positives": 0,
         "artifact_injected": 4,
+        "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
         "mean_alpha_fraction": 0.9244013070379887,
         "mean_peak_hz": 10,
@@ -28,7 +31,10 @@
       },
       {
         "accepted": 12,
+        "artifact_false_negatives": 0,
+        "artifact_false_positives": 0,
         "artifact_injected": 4,
+        "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
         "mean_alpha_fraction": 0.8163211137423881,
         "mean_peak_hz": 10,
@@ -37,9 +43,12 @@
       },
       {
         "accepted": 12,
+        "artifact_false_negatives": 0,
+        "artifact_false_positives": 0,
         "artifact_injected": 4,
+        "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
-        "mean_alpha_fraction": 0.6285293325330541,
+        "mean_alpha_fraction": 0.6285293325330542,
         "mean_peak_hz": 10,
         "noise_sd_uV": 16,
         "rejected": 4
@@ -49,5 +58,5 @@
   },
   "project": "AutoEEG-Research-Lab",
   "schema_version": 1,
-  "source_sha256": "e840584b45c90ff1af4bb93656664e0b60a1c4acbfaf4ae547054aebc2797b5a"
+  "source_sha256": "0add27bddbcaa451806776cdb0101ca946eb133ba6d7fee8553acb00d5349163"
 }

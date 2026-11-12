@@ -49,9 +49,10 @@ def run(config):
     rows = [['epoch', 'noise_sd_uV', 'artifact_injected', 'sample', 'amplitude_uV']]
     results = []
     for noise in config['noise_levels']:
-        accepted, peaks, ratios, rejected, tp = 0, [], [], 0, 0
+        accepted, peaks, ratios, rejected, tp, injected = 0, [], [], 0, 0, 0
         for epoch in range(config['epochs_per_noise']):
             artifact = epoch % 4 == 0
+            injected += int(artifact)
             xs = signal_epoch(rng, config['fs_hz'], config['seconds'], config['alpha_uV'], noise, artifact)
             rows.extend([epoch, noise, int(artifact), i, format(x, '.12g')] for i, x in enumerate(xs))
             reject = max(xs) - min(xs) > config['peak_to_peak_limit_uV']
@@ -63,8 +64,12 @@ def run(config):
                 ratios.append(sum(p for f, p in powers.items() if 8 <= f <= 12) / sum(powers.values()))
                 accepted += 1
         results.append(dict(noise_sd_uV=noise, accepted=accepted, rejected=rejected,
-                            artifact_true_positives=tp, artifact_injected=config['epochs_per_noise']//4,
-                            mean_peak_hz=mean(peaks), mean_alpha_fraction=mean(ratios)))
+                            artifact_true_positives=tp, artifact_injected=injected,
+                            artifact_false_positives=rejected-tp,
+                            artifact_false_negatives=injected-tp,
+                            artifact_true_negatives=config['epochs_per_noise']-injected-(rejected-tp),
+                            mean_peak_hz=mean(peaks) if peaks else None,
+                            mean_alpha_fraction=mean(ratios) if ratios else None))
     return rows, {'conditions': results, 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
 
 def experiment():
