@@ -39,7 +39,7 @@
         "accepted": 12,
         "artifact_injected": 4,
         "artifact_true_positives": 4,
-        "mean_alpha_fraction": 0.6285293325330542,
+        "mean_alpha_fraction": 0.6285293325330541,
         "mean_peak_hz": 10,
         "noise_sd_uV": 16,
         "rejected": 4
