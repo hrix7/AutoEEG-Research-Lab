@@ -1,0 +1,7 @@
+# Synthetic data provenance
+
+The generator creates 2-second, 128 Hz epochs with a 15 uV 10 Hz sinusoid, a 4 uV 20 Hz sinusoid and Gaussian noise (SD 2, 8 or 16 uV). Every fourth epoch receives an eight-sample 250 uV pulse. A fixed 150 uV peak-to-peak rule excludes contaminated epochs before analysis. The one-sided rectangular-window periodogram covers integer frequencies 1–40 Hz. Outputs include peak frequency, 8–12 Hz power fraction and artifact counts by noise level. Epoch length aligns both sinusoids to DFT bins; this makes recovery easier than real EEG. No filtering, source localization or seizure detection is claimed.
+
+All input data are generated locally by the committed `pipeline.py` from `config.json`. No public dataset is downloaded, no patient records are used, and no data license or access credential is required. The included CSV is a reproducible generated artifact, not collected biomedical measurements. `results/manifest.json` records SHA-256 checksums; `results/results.json` records configuration and generator source hashes. Python random.Random uses explicitly listed seeds. Exact bytes are verified within the same environment; floating-point last bits can vary across platforms. Reproduce on Python 3.11, ubuntu-24.04 for CI parity.
+
+Code and generated synthetic artifacts are released under the repository MIT license. Do not add identifiable health data to this repository. A future public-data extension must document dataset version, source URL, terms, checksum, access constraints, subject-level splits and exclusions before running.

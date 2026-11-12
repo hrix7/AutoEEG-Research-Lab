@@ -1,0 +1,13 @@
+{
+  "seed": 1729,
+  "fs_hz": 128,
+  "seconds": 2,
+  "alpha_uV": 15,
+  "noise_levels": [
+    2,
+    8,
+    16
+  ],
+  "epochs_per_noise": 16,
+  "peak_to_peak_limit_uV": 150
+}

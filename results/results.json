@@ -1,0 +1,53 @@
+{
+  "config": {
+    "alpha_uV": 15,
+    "epochs_per_noise": 16,
+    "fs_hz": 128,
+    "noise_levels": [
+      2,
+      8,
+      16
+    ],
+    "peak_to_peak_limit_uV": 150,
+    "seconds": 2,
+    "seed": 1729
+  },
+  "config_sha256": "8efd1d7daf815da9857de6935ff046db23a84051f22a80eadcbbcc4def0271ea",
+  "data_kind": "synthetic",
+  "data_sha256": "7f9979815bcc90b80562bafc408656e3ca8f0c1090eaa2fd14fdf07cc2f8ea7a",
+  "metrics": {
+    "conditions": [
+      {
+        "accepted": 12,
+        "artifact_injected": 4,
+        "artifact_true_positives": 4,
+        "mean_alpha_fraction": 0.9244013070379887,
+        "mean_peak_hz": 10,
+        "noise_sd_uV": 2,
+        "rejected": 4
+      },
+      {
+        "accepted": 12,
+        "artifact_injected": 4,
+        "artifact_true_positives": 4,
+        "mean_alpha_fraction": 0.8163211137423881,
+        "mean_peak_hz": 10,
+        "noise_sd_uV": 8,
+        "rejected": 4
+      },
+      {
+        "accepted": 12,
+        "artifact_injected": 4,
+        "artifact_true_positives": 4,
+        "mean_alpha_fraction": 0.6285293325330542,
+        "mean_peak_hz": 10,
+        "noise_sd_uV": 16,
+        "rejected": 4
+      }
+    ],
+    "interpretation": "Spectral recovery on generated sinusoids only; no disease labels or patient data."
+  },
+  "project": "AutoEEG-Research-Lab",
+  "schema_version": 1,
+  "source_sha256": "e840584b45c90ff1af4bb93656664e0b60a1c4acbfaf4ae547054aebc2797b5a"
+}
