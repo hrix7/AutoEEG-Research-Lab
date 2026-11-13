@@ -44,9 +44,9 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "hann_mean_alpha_fraction": 0.5445426197932011,
+      "hann_mean_alpha_fraction": 0.5445426197932012,
       "hann_mean_peak_hz": 10,
-      "mean_alpha_fraction": 0.6285293325330542,
+      "mean_alpha_fraction": 0.6285293325330541,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4,
@@ -57,4 +57,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `648184b2ef7f9b6f0e6c4865b042e14e88bd817a02788fa852ed66a48ffd4487`
+Result SHA-256: `4cef5d1a9a457e8e5297a7f1524e953e886a302ac4edc5cee6c970bfa65d87a9`
