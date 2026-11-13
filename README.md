@@ -53,3 +53,7 @@ Add independently sourced, license-reviewed public data, stronger baselines and 
 ## License
 
 MIT; see [LICENSE](LICENSE).
+
+## 2026-11-13 benchmark extension
+
+Adds symmetric Hann power estimates alongside existing rectangular estimates on the same accepted epochs. Power is normalized by fs × sum(window²). Alpha fractions use the 1–40 Hz integer evaluation grid, not a continuous-band integral. Zero-power accepted epochs are counted separately and have undefined spectral estimates; no arbitrary peak is assigned. The window comparison does not establish patient or disease performance.

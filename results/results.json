@@ -24,10 +24,13 @@
         "artifact_injected": 4,
         "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
+        "hann_mean_alpha_fraction": 0.9197819990083852,
+        "hann_mean_peak_hz": 10,
         "mean_alpha_fraction": 0.9244013070379887,
         "mean_peak_hz": 10,
         "noise_sd_uV": 2,
-        "rejected": 4
+        "rejected": 4,
+        "spectral_epochs": 12
       },
       {
         "accepted": 12,
@@ -36,10 +39,13 @@
         "artifact_injected": 4,
         "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
+        "hann_mean_alpha_fraction": 0.7620219876051486,
+        "hann_mean_peak_hz": 10,
         "mean_alpha_fraction": 0.8163211137423881,
         "mean_peak_hz": 10,
         "noise_sd_uV": 8,
-        "rejected": 4
+        "rejected": 4,
+        "spectral_epochs": 12
       },
       {
         "accepted": 12,
@@ -48,15 +54,18 @@
         "artifact_injected": 4,
         "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
-        "mean_alpha_fraction": 0.6285293325330541,
+        "hann_mean_alpha_fraction": 0.5445426197932011,
+        "hann_mean_peak_hz": 10,
+        "mean_alpha_fraction": 0.6285293325330542,
         "mean_peak_hz": 10,
         "noise_sd_uV": 16,
-        "rejected": 4
+        "rejected": 4,
+        "spectral_epochs": 12
       }
     ],
     "interpretation": "Spectral recovery on generated sinusoids only; no disease labels or patient data."
   },
   "project": "AutoEEG-Research-Lab",
   "schema_version": 1,
-  "source_sha256": "0add27bddbcaa451806776cdb0101ca946eb133ba6d7fee8553acb00d5349163"
+  "source_sha256": "4e3d19b8c43c996685ceb07c1211184decf60b389a4ca4a7b0223cec08b85a67"
 }

@@ -26,14 +26,19 @@ def table(rows):
 def mean(xs):
     return statistics.mean(xs)
 
-def spectral_power(signal, fs, frequency):
+def spectral_power(signal, fs, frequency, window="rectangular"):
     # One-sided periodogram at an integer DFT bin; units amplitude squared / Hz.
     n = len(signal)
+    if n < 3 or not math.isfinite(fs) or fs <= 0 or not 0 < frequency < fs/2 or any(not math.isfinite(x) for x in signal):
+        raise ValueError("finite signal of at least three samples and an interior positive frequency required")
+    if window not in ("rectangular", "hann"):
+        raise ValueError("window must be rectangular or hann")
     offset = mean(signal)
-    centered = [x - offset for x in signal]
+    weights = [1.0]*n if window == "rectangular" else [.5-.5*math.cos(2*math.pi*i/(n-1)) for i in range(n)]
+    centered = [(x - offset)*w for x,w in zip(signal,weights)]
     re = sum(x * math.cos(2 * math.pi * frequency * i / fs) for i, x in enumerate(centered))
     im = sum(x * math.sin(2 * math.pi * frequency * i / fs) for i, x in enumerate(centered))
-    return 2 * (re * re + im * im) / (fs * n)
+    return 2 * (re * re + im * im) / (fs * sum(w*w for w in weights))
 
 def signal_epoch(rng, fs, seconds, alpha, noise, artifact):
     xs = [alpha * math.sin(2 * math.pi * 10 * i / fs)
@@ -50,6 +55,7 @@ def run(config):
     results = []
     for noise in config['noise_levels']:
         accepted, peaks, ratios, rejected, tp, injected = 0, [], [], 0, 0, 0
+        hann_peaks, hann_ratios = [], []
         for epoch in range(config['epochs_per_noise']):
             artifact = epoch % 4 == 0
             injected += int(artifact)
@@ -60,14 +66,21 @@ def run(config):
             tp += reject and artifact
             if not reject:
                 powers = {f: spectral_power(xs, config['fs_hz'], f) for f in range(1, 41)}
-                peaks.append(max(powers, key=powers.get))
-                ratios.append(sum(p for f, p in powers.items() if 8 <= f <= 12) / sum(powers.values()))
+                for window,peak_values,ratio_values in [('rectangular',peaks,ratios),('hann',hann_peaks,hann_ratios)]:
+                    spectrum = powers if window=='rectangular' else {f:spectral_power(xs,config['fs_hz'],f,window) for f in range(1,41)}
+                    total=sum(spectrum.values())
+                    if total>0:
+                        peak_values.append(max(spectrum,key=spectrum.get))
+                        ratio_values.append(sum(v for f,v in spectrum.items() if 8<=f<=12)/total)
                 accepted += 1
         results.append(dict(noise_sd_uV=noise, accepted=accepted, rejected=rejected,
                             artifact_true_positives=tp, artifact_injected=injected,
                             artifact_false_positives=rejected-tp,
                             artifact_false_negatives=injected-tp,
                             artifact_true_negatives=config['epochs_per_noise']-injected-(rejected-tp),
+                            spectral_epochs=len(peaks),
+                            hann_mean_peak_hz=mean(hann_peaks) if hann_peaks else None,
+                            hann_mean_alpha_fraction=mean(hann_ratios) if hann_ratios else None,
                             mean_peak_hz=mean(peaks) if peaks else None,
                             mean_alpha_fraction=mean(ratios) if ratios else None))
     return rows, {'conditions': results, 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
