@@ -49,6 +49,18 @@ def signal_epoch(rng, fs, seconds, alpha, noise, artifact):
             xs[i] += 250
     return xs
 
+def off_bin_probe(fs, seconds, frequency=10.3):
+    if type(fs) is not int or type(seconds) is not int or fs<82 or seconds<1 or not math.isfinite(frequency) or not 0<frequency<fs/2:
+        raise ValueError('positive duration, integer fs>=82 and interior positive frequency required')
+    samples=[math.sin(2*math.pi*frequency*i/fs) for i in range(fs*seconds)]
+    estimates=[]
+    for window in ('rectangular','hann'):
+        powers={f:spectral_power(samples,fs,f,window) for f in range(1,41)}
+        peak=max(powers,key=powers.get)
+        total=sum(powers.values())
+        estimates.append(dict(window=window,peak_hz=peak,absolute_peak_error_hz=abs(peak-frequency),far_grid_fraction=sum(v for f,v in powers.items() if abs(f-frequency)>2)/total))
+    return dict(generator_frequency_hz=frequency,amplitude=1,noise_sd=0,grid_hz=list(range(1,41)),estimates=estimates,interpretation='Noiseless off-bin probe on the fixed integer-Hz evaluation grid; a fractional frequency is not recovered exactly and Hann suppression is not disease classification.')
+
 def run(config):
     rng = random.Random(config['seed'])
     rows = [['epoch', 'noise_sd_uV', 'artifact_injected', 'sample', 'amplitude_uV']]
@@ -83,7 +95,7 @@ def run(config):
                             hann_mean_alpha_fraction=mean(hann_ratios) if hann_ratios else None,
                             mean_peak_hz=mean(peaks) if peaks else None,
                             mean_alpha_fraction=mean(ratios) if ratios else None))
-    return rows, {'conditions': results, 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
+    return rows, {'conditions': results, 'off_bin_probe':off_bin_probe(config['fs_hz'],config['seconds']), 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
 
 def experiment():
     config = json.loads((ROOT / 'config.json').read_text())

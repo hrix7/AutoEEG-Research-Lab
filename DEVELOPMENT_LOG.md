@@ -24,3 +24,11 @@ Hann spectral estimates with explicit window-energy normalization and off-bin le
 Adds symmetric Hann power estimates alongside existing rectangular estimates on the same accepted epochs. Power is normalized by fs × sum(window²). Alpha fractions use the 1–40 Hz integer evaluation grid, not a continuous-band integral. Zero-power accepted epochs are counted separately and have undefined spectral estimates; no arbitrary peak is assigned. The window comparison does not establish patient or disease performance.
 
 Validation: full unittest suite, pipeline regeneration and byte-for-byte verifier, diff review; GitHub validation outcome is tracked after push. No workflow/permission changes.
+
+## 2026-11-14
+
+Noiseless off-bin recovery/leakage probe on the fixed evaluation grid.
+
+Adds a deterministic amplitude-1 10.3 Hz sinusoid probe separate from noisy epoch data. Reports each window’s integer-grid peak error and fraction of sampled 1–40 Hz power more than 2 Hz from truth. This exposes frequency-resolution limits, not an interpolated exact-frequency claim. Existing noisy datasets and acceptance thresholds stay unchanged.
+
+Validation before publication: full unittest suite, regenerated pipeline artifacts, byte-for-byte verification and diff review. Workflow configuration/permissions unchanged; existing policy tests pass. Hosted CI is followed after the tested source is published.

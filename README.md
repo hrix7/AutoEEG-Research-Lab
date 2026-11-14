@@ -57,3 +57,7 @@ MIT; see [LICENSE](LICENSE).
 ## 2026-11-13 benchmark extension
 
 Adds symmetric Hann power estimates alongside existing rectangular estimates on the same accepted epochs. Power is normalized by fs × sum(window²). Alpha fractions use the 1–40 Hz integer evaluation grid, not a continuous-band integral. Zero-power accepted epochs are counted separately and have undefined spectral estimates; no arbitrary peak is assigned. The window comparison does not establish patient or disease performance.
+
+## 2026-11-14 extension
+
+Adds a deterministic amplitude-1 10.3 Hz sinusoid probe separate from noisy epoch data. Reports each window’s integer-grid peak error and fraction of sampled 1–40 Hz power more than 2 Hz from truth. This exposes frequency-resolution limits, not an interpolated exact-frequency claim. Existing noisy datasets and acceptance thresholds stay unchanged.
