@@ -12,6 +12,10 @@ Hann spectral estimates and off-bin leakage tests.
 
 Noiseless off-bin recovery/leakage probe on the fixed evaluation grid.
 
+## Completed — 2026-11-15
+
+Validate configuration before generating signal epochs.
+
 ## Next priorities
 
 1. Expand artifact families with independently known injection times.

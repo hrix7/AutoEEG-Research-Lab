@@ -32,3 +32,11 @@ Noiseless off-bin recovery/leakage probe on the fixed evaluation grid.
 Adds a deterministic amplitude-1 10.3 Hz sinusoid probe separate from noisy epoch data. Reports each window’s integer-grid peak error and fraction of sampled 1–40 Hz power more than 2 Hz from truth. This exposes frequency-resolution limits, not an interpolated exact-frequency claim. Existing noisy datasets and acceptance thresholds stay unchanged.
 
 Validation before publication: full unittest suite, regenerated pipeline artifacts, byte-for-byte verification and diff review. Workflow configuration/permissions unchanged; existing policy tests pass. Hosted CI is followed after the tested source is published.
+
+## 2026-11-15
+
+Validate configuration before generating signal epochs.
+
+Rejects unsupported sampling/duration/epoch types, nonfinite or negative amplitudes/noise/thresholds, and empty/duplicate noise grids before generation. Zero noise and a zero rejection threshold remain supported. Current default data and scientific thresholds are unchanged.
+
+Validation before publication: full unittest suite, pipeline regeneration/byte verifier, diff review and existing workflow-policy tests. Workflows and permissions unchanged. Hosted validation is followed after publication.

@@ -61,7 +61,22 @@ def off_bin_probe(fs, seconds, frequency=10.3):
         estimates.append(dict(window=window,peak_hz=peak,absolute_peak_error_hz=abs(peak-frequency),far_grid_fraction=sum(v for f,v in powers.items() if abs(f-frequency)>2)/total))
     return dict(generator_frequency_hz=frequency,amplitude=1,noise_sd=0,grid_hz=list(range(1,41)),estimates=estimates,interpretation='Noiseless off-bin probe on the fixed integer-Hz evaluation grid; a fractional frequency is not recovered exactly and Hann suppression is not disease classification.')
 
+def validate_config(config):
+    for name,minimum in [('fs_hz',82),('seconds',1),('epochs_per_noise',1)]:
+        if type(config.get(name)) is not int or config[name]<minimum:
+            raise ValueError(name+' must be an integer >= '+str(minimum))
+    if type(config.get('seed')) is not int:
+        raise ValueError('seed must be an integer')
+    for name in ('alpha_uV','peak_to_peak_limit_uV'):
+        value=config.get(name)
+        if isinstance(value,bool) or not isinstance(value,(int,float)) or not math.isfinite(value) or value<0:
+            raise ValueError(name+' must be finite and nonnegative')
+    noise=config.get('noise_levels')
+    if not isinstance(noise,list) or not noise or any(isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or v<0 for v in noise) or len(set(noise))!=len(noise):
+        raise ValueError('noise_levels must be unique finite nonnegative numbers')
+
 def run(config):
+    validate_config(config)
     rng = random.Random(config['seed'])
     rows = [['epoch', 'noise_sd_uV', 'artifact_injected', 'sample', 'amplitude_uV']]
     results = []

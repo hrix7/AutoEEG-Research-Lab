@@ -61,3 +61,7 @@ Adds symmetric Hann power estimates alongside existing rectangular estimates on 
 ## 2026-11-14 extension
 
 Adds a deterministic amplitude-1 10.3 Hz sinusoid probe separate from noisy epoch data. Reports each window’s integer-grid peak error and fraction of sampled 1–40 Hz power more than 2 Hz from truth. This exposes frequency-resolution limits, not an interpolated exact-frequency claim. Existing noisy datasets and acceptance thresholds stay unchanged.
+
+## 2026-11-15 correctness extension
+
+Rejects unsupported sampling/duration/epoch types, nonfinite or negative amplitudes/noise/thresholds, and empty/duplicate noise grids before generation. Zero noise and a zero rejection threshold remain supported. Current default data and scientific thresholds are unchanged.
