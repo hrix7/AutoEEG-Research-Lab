@@ -20,6 +20,35 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "mean_peak_hz": 10,
       "noise_sd_uV": 2,
       "rejected": 4,
+      "rejection_tradeoffs": [
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 75,
+          "true_negatives": 12,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 150,
+          "true_negatives": 12,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 4,
+          "false_positives": 0,
+          "precision": null,
+          "recall": 0.0,
+          "threshold_uV": 300,
+          "true_negatives": 12,
+          "true_positives": 0
+        }
+      ],
       "spectral_epochs": 12
     },
     {
@@ -35,6 +64,35 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "mean_peak_hz": 10,
       "noise_sd_uV": 8,
       "rejected": 4,
+      "rejection_tradeoffs": [
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 75,
+          "true_negatives": 12,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 150,
+          "true_negatives": 12,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 300,
+          "true_negatives": 12,
+          "true_positives": 4
+        }
+      ],
       "spectral_epochs": 12
     },
     {
@@ -44,12 +102,41 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "hann_mean_alpha_fraction": 0.5445426197932012,
+      "hann_mean_alpha_fraction": 0.5445426197932011,
       "hann_mean_peak_hz": 10,
-      "mean_alpha_fraction": 0.6285293325330541,
+      "mean_alpha_fraction": 0.6285293325330542,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4,
+      "rejection_tradeoffs": [
+        {
+          "false_negatives": 0,
+          "false_positives": 12,
+          "precision": 0.25,
+          "recall": 1.0,
+          "threshold_uV": 75,
+          "true_negatives": 0,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 150,
+          "true_negatives": 12,
+          "true_positives": 4
+        },
+        {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "threshold_uV": 300,
+          "true_negatives": 12,
+          "true_positives": 4
+        }
+      ],
       "spectral_epochs": 12
     }
   ],
@@ -59,13 +146,13 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
     "estimates": [
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 0.06283966699555599,
+        "far_grid_fraction": 0.06283966699555597,
         "peak_hz": 10,
         "window": "rectangular"
       },
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 2.6016735469837423e-05,
+        "far_grid_fraction": 2.601673546983745e-05,
         "peak_hz": 10,
         "window": "hann"
       }
@@ -119,4 +206,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `65985724d87f09e9c567f0be14d25751a2d95aa16fc84b237fb4a67814dbc4b5`
+Result SHA-256: `143b09bfbef4eae6a5160ee1b790c19d0264a238130febeb6bc9b1030f099e0a`

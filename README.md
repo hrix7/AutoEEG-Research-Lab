@@ -65,3 +65,7 @@ Adds a deterministic amplitude-1 10.3 Hz sinusoid probe separate from noisy epoc
 ## 2026-11-15 correctness extension
 
 Rejects unsupported sampling/duration/epoch types, nonfinite or negative amplitudes/noise/thresholds, and empty/duplicate noise grids before generation. Zero noise and a zero rejection threshold remain supported. Current default data and scientific thresholds are unchanged.
+
+## Preset rejection-threshold tradeoffs
+
+Added fixed 75/150/300 uV peak-to-peak rejection tables with hand-counted confusion tests and strict boundary coverage. Thresholds are predeclared, not tuned or selected on these results. The configured detector and random stream remain unchanged.

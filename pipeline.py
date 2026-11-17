@@ -75,6 +75,15 @@ def validate_config(config):
     if not isinstance(noise,list) or not noise or any(isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or v<0 for v in noise) or len(set(noise))!=len(noise):
         raise ValueError('noise_levels must be unique finite nonnegative numbers')
 
+def rejection_tradeoffs(records,thresholds=(75,150,300)):
+    rows=[]
+    for threshold in thresholds:
+        tp=sum(amplitude>threshold and artifact for amplitude,artifact in records)
+        fp=sum(amplitude>threshold and not artifact for amplitude,artifact in records)
+        positives=sum(artifact for amplitude,artifact in records);negatives=len(records)-positives
+        rows.append(dict(threshold_uV=threshold,true_positives=tp,false_positives=fp,false_negatives=positives-tp,true_negatives=negatives-fp,precision=tp/(tp+fp) if tp+fp else None,recall=tp/positives if positives else None))
+    return rows
+
 def run(config):
     validate_config(config)
     rng = random.Random(config['seed'])
@@ -82,13 +91,14 @@ def run(config):
     results = []
     for noise in config['noise_levels']:
         accepted, peaks, ratios, rejected, tp, injected = 0, [], [], 0, 0, 0
-        hann_peaks, hann_ratios = [], []
+        hann_peaks, hann_ratios, amplitude_records = [], [], []
         for epoch in range(config['epochs_per_noise']):
             artifact = epoch % 4 == 0
             injected += int(artifact)
             xs = signal_epoch(rng, config['fs_hz'], config['seconds'], config['alpha_uV'], noise, artifact)
             rows.extend([epoch, noise, int(artifact), i, format(x, '.12g')] for i, x in enumerate(xs))
-            reject = max(xs) - min(xs) > config['peak_to_peak_limit_uV']
+            amplitude=max(xs)-min(xs);amplitude_records.append((amplitude,artifact))
+            reject = amplitude > config['peak_to_peak_limit_uV']
             rejected += reject
             tp += reject and artifact
             if not reject:
@@ -105,6 +115,7 @@ def run(config):
                             artifact_false_positives=rejected-tp,
                             artifact_false_negatives=injected-tp,
                             artifact_true_negatives=config['epochs_per_noise']-injected-(rejected-tp),
+                            rejection_tradeoffs=rejection_tradeoffs(amplitude_records),
                             spectral_epochs=len(peaks),
                             hann_mean_peak_hz=mean(hann_peaks) if hann_peaks else None,
                             hann_mean_alpha_fraction=mean(hann_ratios) if hann_ratios else None,

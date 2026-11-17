@@ -16,8 +16,12 @@ Noiseless off-bin recovery/leakage probe on the fixed evaluation grid.
 
 Validate configuration before generating signal epochs.
 
+## Completed — 2026-11-17
+
+Preset rejection-threshold tradeoffs.
+
 ## Next priorities
 
 1. Expand artifact families with independently known injection times.
-2. Report artifact-rejection threshold tradeoffs without holdout tuning.
+2. Add independently seeded uncertainty for descriptive threshold tradeoffs.
 3. Review public-data provenance and subject splits.
