@@ -112,9 +112,9 @@
         "artifact_injected": 4,
         "artifact_true_negatives": 12,
         "artifact_true_positives": 4,
-        "hann_mean_alpha_fraction": 0.5445426197932012,
+        "hann_mean_alpha_fraction": 0.5445426197932011,
         "hann_mean_peak_hz": 10,
-        "mean_alpha_fraction": 0.6285293325330541,
+        "mean_alpha_fraction": 0.6285293325330542,
         "mean_peak_hz": 10,
         "noise_sd_uV": 16,
         "rejected": 4,
@@ -156,13 +156,13 @@
       "estimates": [
         {
           "absolute_peak_error_hz": 0.3000000000000007,
-          "far_grid_fraction": 0.06283966699555599,
+          "far_grid_fraction": 0.06283966699555597,
           "peak_hz": 10,
           "window": "rectangular"
         },
         {
           "absolute_peak_error_hz": 0.3000000000000007,
-          "far_grid_fraction": 2.6016735469837423e-05,
+          "far_grid_fraction": 2.601673546983745e-05,
           "peak_hz": 10,
           "window": "hann"
         }
@@ -216,5 +216,5 @@
   },
   "project": "AutoEEG-Research-Lab",
   "schema_version": 1,
-  "source_sha256": "17cb3badc6d510ed22cbdffcccfcc1fd6ccc9a7aeb982f81e641e5aba4e3935a"
+  "source_sha256": "858f91ff1da98aa01ea53d849a880023085e02ecffd5614beab4d2dc09197419"
 }

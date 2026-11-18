@@ -102,9 +102,9 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "hann_mean_alpha_fraction": 0.5445426197932012,
+      "hann_mean_alpha_fraction": 0.5445426197932011,
       "hann_mean_peak_hz": 10,
-      "mean_alpha_fraction": 0.6285293325330541,
+      "mean_alpha_fraction": 0.6285293325330542,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4,
@@ -146,13 +146,13 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
     "estimates": [
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 0.06283966699555599,
+        "far_grid_fraction": 0.06283966699555597,
         "peak_hz": 10,
         "window": "rectangular"
       },
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 2.6016735469837423e-05,
+        "far_grid_fraction": 2.601673546983745e-05,
         "peak_hz": 10,
         "window": "hann"
       }
@@ -206,4 +206,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `8cc027345226938afebfc5746c800c1fa0bc15fd34aa8b4d7379eccb52b5e9dc`
+Result SHA-256: `ba2b137f859355d4fcd9246ab5ca1942082c1d9c53de7c3f10e5fb21de8a3376`

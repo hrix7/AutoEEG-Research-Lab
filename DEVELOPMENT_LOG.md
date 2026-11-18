@@ -44,3 +44,7 @@ Validation before publication: full unittest suite, pipeline regeneration/byte v
 ## 2026-11-17 — Preset rejection-threshold tradeoffs
 
 Completed the retained, unpublished implementation from November 16. Added fixed 75/150/300 uV peak-to-peak rejection tables with hand-counted confusion tests and strict boundary coverage. Thresholds are predeclared, not tuned or selected on these results. The configured detector and random stream remain unchanged. Full unit tests, pipeline regeneration and artifact verification run before publication; no workflow or permission changes.
+
+## 2026-11-18 — Reject invalid threshold-study inputs
+
+Threshold tradeoffs now reject NaN/infinite/negative amplitudes, ambiguous injection labels, duplicate/invalid thresholds and one-shot iterators. This prevents silent clean/artifact miscounts. Tests cover malformed inputs, zero boundaries, empty records and nonmutation. Existing valid benchmark settings are unchanged. Full suite: 22 tests passed; pipeline generation, independent --verify and diff checks passed before publication. No workflow/permission changes; workflow policy tests passed.

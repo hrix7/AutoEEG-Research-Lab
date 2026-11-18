@@ -76,6 +76,12 @@ def validate_config(config):
         raise ValueError('noise_levels must be unique finite nonnegative numbers')
 
 def rejection_tradeoffs(records,thresholds=(75,150,300)):
+    # Refuse NaN amplitudes/ambiguous labels instead of silently counting them as clean.
+    numeric=lambda v:not isinstance(v,bool) and isinstance(v,(int,float)) and math.isfinite(v) and v>=0
+    if not isinstance(records,(list,tuple)) or any(not isinstance(r,(list,tuple)) or len(r)!=2 or not numeric(r[0]) or type(r[1]) is not bool for r in records):
+        raise ValueError('finite nonnegative amplitudes and explicit boolean injection labels required')
+    if not isinstance(thresholds,(list,tuple)) or not thresholds or any(not numeric(t) for t in thresholds) or len(set(thresholds))!=len(thresholds):
+        raise ValueError('unique finite nonnegative thresholds required')
     rows=[]
     for threshold in thresholds:
         tp=sum(amplitude>threshold and artifact for amplitude,artifact in records)

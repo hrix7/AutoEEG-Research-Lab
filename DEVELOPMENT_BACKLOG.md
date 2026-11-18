@@ -20,8 +20,12 @@ Validate configuration before generating signal epochs.
 
 Preset rejection-threshold tradeoffs.
 
+## Completed — 2026-11-18
+
+Reject invalid threshold-study inputs.
+
 ## Next priorities
 
 1. Expand artifact families with independently known injection times.
-2. Add independently seeded uncertainty for descriptive threshold tradeoffs.
+2. Add independently seeded descriptive threshold uncertainty.
 3. Review public-data provenance and subject splits.

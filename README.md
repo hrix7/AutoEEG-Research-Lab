@@ -69,3 +69,7 @@ Rejects unsupported sampling/duration/epoch types, nonfinite or negative amplitu
 ## Preset rejection-threshold tradeoffs
 
 Added fixed 75/150/300 uV peak-to-peak rejection tables with hand-counted confusion tests and strict boundary coverage. Thresholds are predeclared, not tuned or selected on these results. The configured detector and random stream remain unchanged.
+
+## Reject invalid threshold-study inputs
+
+Threshold tradeoffs now reject NaN/infinite/negative amplitudes, ambiguous injection labels, duplicate/invalid thresholds and one-shot iterators. This prevents silent clean/artifact miscounts. Tests cover malformed inputs, zero boundaries, empty records and nonmutation. Existing valid benchmark settings are unchanged.
