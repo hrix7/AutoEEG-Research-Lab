@@ -6,6 +6,92 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 
 ```json
 {
+  "artifact_family_probe": {
+    "cases": [
+      {
+        "end_sample_exclusive": 96,
+        "family": "pulse",
+        "injected_amplitude_uV": 30,
+        "peak_to_peak_uV": 63.37324022483098,
+        "rejected": false,
+        "signal_sha256": "146efbc091cd71bbaf1fa56acd76a89f8f9e4926f641e7cccc136d554adeee2e",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "pulse",
+        "injected_amplitude_uV": 100,
+        "peak_to_peak_uV": 133.37324022483097,
+        "rejected": false,
+        "signal_sha256": "cf343c424949a8920619db2e3de4eedbf55a8d65541c55738926154b1e8b0907",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "pulse",
+        "injected_amplitude_uV": 250,
+        "peak_to_peak_uV": 283.37324022483097,
+        "rejected": true,
+        "signal_sha256": "f89ec2200d2494d2fcdd63ec7f871998d8bb7af01901a52abca3ceaeed02c562",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "blink",
+        "injected_amplitude_uV": 30,
+        "peak_to_peak_uV": 62.95309673289945,
+        "rejected": false,
+        "signal_sha256": "e4fcfd0dde9a5596af689f323b9eca8d888b7c06ae5a2772f248cf5ef4f96efc",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "blink",
+        "injected_amplitude_uV": 100,
+        "peak_to_peak_uV": 132.2805815470125,
+        "rejected": false,
+        "signal_sha256": "32bb90d134dafb0716e04e15d2bc297616112de40f4322e7175c7a38f1bf3a43",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "blink",
+        "injected_amplitude_uV": 250,
+        "peak_to_peak_uV": 281.6866201124155,
+        "rejected": true,
+        "signal_sha256": "a11b519b0a58df317b32d737bc9ec88fa2fca310b515d8cb525ee43516e2edfc",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "muscle",
+        "injected_amplitude_uV": 30,
+        "peak_to_peak_uV": 72.55885636114562,
+        "rejected": false,
+        "signal_sha256": "add873c6742ed89f9f83064f4220e1e4bd20e237cec15a8e9d675f65fb911b0d",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "muscle",
+        "injected_amplitude_uV": 100,
+        "peak_to_peak_uV": 193.8014373208415,
+        "rejected": true,
+        "signal_sha256": "583fe36f3f8fb83aa07b7394953285952b70383ca3af80e5fedbc8e57ef06d8d",
+        "start_sample": 64
+      },
+      {
+        "end_sample_exclusive": 96,
+        "family": "muscle",
+        "injected_amplitude_uV": 250,
+        "peak_to_peak_uV": 482.893162469854,
+        "rejected": true,
+        "signal_sha256": "b5b200d9053e401a4287e1118b59593544c97d391ae19a4b627136aec9d87a18",
+        "start_sample": 64
+      }
+    ],
+    "interpretation": "Separate noiseless nine-case probe: fixed floor(fs/4)-sample rectangular pulse, sin-squared blink-like deflection, or 30 Hz sinusoid under the same envelope. Names describe teaching shapes, not validated physiological artifacts. Known injection window; primary epoch generator/noise stream/threshold unchanged. No tuning or clinical inference."
+  },
   "conditions": [
     {
       "accepted": 12,
@@ -206,4 +292,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `ba2b137f859355d4fcd9246ab5ca1942082c1d9c53de7c3f10e5fb21de8a3376`
+Result SHA-256: `8ef2c60a35663383faa9583ca88484ccb157ddb11058414c78f8fcbaae91e23e`

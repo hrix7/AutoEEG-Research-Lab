@@ -24,8 +24,12 @@ Preset rejection-threshold tradeoffs.
 
 Reject invalid threshold-study inputs.
 
+## Completed — 2026-11-19
+
+Known-support artifact-family probes.
+
 ## Next priorities
 
-1. Expand artifact families with independently known injection times.
-2. Add independently seeded descriptive threshold uncertainty.
+1. Add independently seeded descriptive artifact-family uncertainty without threshold tuning.
+2. Add spectral effects of accepted injected artifacts with independent frequency references.
 3. Review public-data provenance and subject splits.

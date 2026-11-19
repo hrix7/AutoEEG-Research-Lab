@@ -73,3 +73,7 @@ Added fixed 75/150/300 uV peak-to-peak rejection tables with hand-counted confus
 ## Reject invalid threshold-study inputs
 
 Threshold tradeoffs now reject NaN/infinite/negative amplitudes, ambiguous injection labels, duplicate/invalid thresholds and one-shot iterators. This prevents silent clean/artifact miscounts. Tests cover malformed inputs, zero boundaries, empty records and nonmutation. Existing valid benchmark settings are unchanged.
+
+## Known-support artifact-family probes
+
+Added a separate nine-case noiseless study of rectangular pulse, blink-like deflection and enveloped 30 Hz muscle-like teaching shapes at predeclared amplitudes. Injection support is explicit in sample indices and full signals have reproducible hashes. The original noisy epochs, random stream and rejection threshold are unchanged. These shapes are not validated physiological artifact models. Tests independently evaluate injection formulas/support and recompute hashes/rejections.
