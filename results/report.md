@@ -14,7 +14,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 63.37324022483098,
         "rejected": false,
-        "signal_sha256": "146efbc091cd71bbaf1fa56acd76a89f8f9e4926f641e7cccc136d554adeee2e",
+        "signal_sha256": "7e8ba6c44f6d4bb14011d1eefadc0f7b7cd47db00f74b9a5439395be745cb95f",
         "start_sample": 64
       },
       {
@@ -23,7 +23,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 133.37324022483097,
         "rejected": false,
-        "signal_sha256": "cf343c424949a8920619db2e3de4eedbf55a8d65541c55738926154b1e8b0907",
+        "signal_sha256": "0cfee9827c01cfbadaacebe144dc05e005f4abfaab83691631dda2f6b45bb5cd",
         "start_sample": 64
       },
       {
@@ -32,7 +32,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 283.37324022483097,
         "rejected": true,
-        "signal_sha256": "f89ec2200d2494d2fcdd63ec7f871998d8bb7af01901a52abca3ceaeed02c562",
+        "signal_sha256": "7ca540fdfaf943e2b97489c4a335caee02dcdf20320b1500d6472767e863f8f9",
         "start_sample": 64
       },
       {
@@ -41,7 +41,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 62.95309673289945,
         "rejected": false,
-        "signal_sha256": "e4fcfd0dde9a5596af689f323b9eca8d888b7c06ae5a2772f248cf5ef4f96efc",
+        "signal_sha256": "bfb4649fb17ba019e7660e01adff6100fc79b152984e7c8ea1e0a3839e2caf72",
         "start_sample": 64
       },
       {
@@ -50,7 +50,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 132.2805815470125,
         "rejected": false,
-        "signal_sha256": "32bb90d134dafb0716e04e15d2bc297616112de40f4322e7175c7a38f1bf3a43",
+        "signal_sha256": "45dae42f09717582d464d4841e724c7fa8d3d8166567d1dc85439072637f4e8c",
         "start_sample": 64
       },
       {
@@ -59,7 +59,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 281.6866201124155,
         "rejected": true,
-        "signal_sha256": "a11b519b0a58df317b32d737bc9ec88fa2fca310b515d8cb525ee43516e2edfc",
+        "signal_sha256": "cf116e144ab4fe4a29a6651406ab713ecfdff4a8ddc327b257ca8587919674b7",
         "start_sample": 64
       },
       {
@@ -68,7 +68,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 72.55885636114562,
         "rejected": false,
-        "signal_sha256": "add873c6742ed89f9f83064f4220e1e4bd20e237cec15a8e9d675f65fb911b0d",
+        "signal_sha256": "6a6cb299e5f13a28c222540bacde0c575530492094c548ad141615945019ce2d",
         "start_sample": 64
       },
       {
@@ -77,7 +77,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 193.8014373208415,
         "rejected": true,
-        "signal_sha256": "583fe36f3f8fb83aa07b7394953285952b70383ca3af80e5fedbc8e57ef06d8d",
+        "signal_sha256": "4aa22459f510993479d382b877b6585fccd1913aa7abbe3ebfa3aa4e81c796a3",
         "start_sample": 64
       },
       {
@@ -86,7 +86,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 482.893162469854,
         "rejected": true,
-        "signal_sha256": "b5b200d9053e401a4287e1118b59593544c97d391ae19a4b627136aec9d87a18",
+        "signal_sha256": "3f21ecba9f2b6f77f06b0c4dbf8b37f4b7f27e05be354404262aa6c0d92fa286",
         "start_sample": 64
       }
     ],
@@ -188,9 +188,9 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "hann_mean_alpha_fraction": 0.5445426197932011,
+      "hann_mean_alpha_fraction": 0.5445426197932012,
       "hann_mean_peak_hz": 10,
-      "mean_alpha_fraction": 0.6285293325330542,
+      "mean_alpha_fraction": 0.6285293325330541,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4,
@@ -232,13 +232,13 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
     "estimates": [
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 0.06283966699555597,
+        "far_grid_fraction": 0.06283966699555599,
         "peak_hz": 10,
         "window": "rectangular"
       },
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 2.601673546983745e-05,
+        "far_grid_fraction": 2.6016735469837423e-05,
         "peak_hz": 10,
         "window": "hann"
       }
@@ -292,4 +292,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `8ef2c60a35663383faa9583ca88484ccb157ddb11058414c78f8fcbaae91e23e`
+Result SHA-256: `ab051dc769fb16c9b9209bc9fb14139c5474e2b39d84fa4eb439444e6e95dcc6`
