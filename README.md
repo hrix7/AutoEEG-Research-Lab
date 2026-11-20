@@ -77,3 +77,7 @@ Threshold tradeoffs now reject NaN/infinite/negative amplitudes, ambiguous injec
 ## Known-support artifact-family probes
 
 Added a separate nine-case noiseless study of rectangular pulse, blink-like deflection and enveloped 30 Hz muscle-like teaching shapes at predeclared amplitudes. Injection support is explicit in sample indices and full signals have reproducible hashes. The original noisy epochs, random stream and rejection threshold are unchanged. These shapes are not validated physiological artifact models. Tests independently evaluate injection formulas/support and recompute hashes/rejections.
+
+## Spectral effects of injected artifacts
+
+Added rectangular/Hann fixed-grid peak and alpha-fraction diagnostics for every artifact-family probe plus its clean two-sinusoid reference. Rejected cases remain explicitly diagnostic and do not bypass the primary rejection pipeline. Independent complex-DFT, known-frequency and flat/undefined tests validate summaries. No random streams or thresholds were tuned.

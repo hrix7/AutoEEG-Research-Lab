@@ -99,6 +99,14 @@ def artifact_component(fs,seconds,family,amplitude):
         values[start+j]=amplitude*(1 if family=='pulse' else math.sin(math.pi*phase)**2 if family=='blink' else math.sin(2*math.pi*30*j/fs)*math.sin(math.pi*phase)**2)
     return values
 
+def diagnostic_spectra(samples,fs):
+    summaries=[]
+    for window in ('rectangular','hann'):
+        powers={f:spectral_power(samples,fs,f,window) for f in range(1,41)}
+        total=sum(powers.values())
+        summaries.append(dict(window=window,peak_hz=max(powers,key=powers.get) if total else None,alpha_fraction=sum(powers[f] for f in range(8,13))/total if total else None))
+    return summaries
+
 def artifact_family_probe(config):
     fs=config['fs_hz'];seconds=config['seconds'];n=fs*seconds
     base=[config['alpha_uV']*math.sin(2*math.pi*10*i/fs)+4*math.sin(2*math.pi*20*i/fs) for i in range(n)]
@@ -107,8 +115,8 @@ def artifact_family_probe(config):
         for amplitude in (30,100,250):
             component=artifact_component(fs,seconds,family,amplitude);signal=[a+b for a,b in zip(base,component)]
             peak_to_peak=max(signal)-min(signal)
-            cases.append(dict(family=family,injected_amplitude_uV=amplitude,start_sample=fs//2,end_sample_exclusive=fs//2+fs//4,peak_to_peak_uV=peak_to_peak,rejected=peak_to_peak>config['peak_to_peak_limit_uV'],signal_sha256=digest(encode(signal))))
-    return dict(cases=cases,interpretation='Separate noiseless nine-case probe: fixed floor(fs/4)-sample rectangular pulse, sin-squared blink-like deflection, or 30 Hz sinusoid under the same envelope. Names describe teaching shapes, not validated physiological artifacts. Known injection window; primary epoch generator/noise stream/threshold unchanged. No tuning or clinical inference.')
+            cases.append(dict(family=family,injected_amplitude_uV=amplitude,start_sample=fs//2,end_sample_exclusive=fs//2+fs//4,peak_to_peak_uV=peak_to_peak,rejected=peak_to_peak>config['peak_to_peak_limit_uV'],diagnostic_spectra=diagnostic_spectra(signal,fs),signal_sha256=digest(encode(signal))))
+    return dict(clean_diagnostic_spectra=diagnostic_spectra(base,fs),spectral_scope='Spectra are diagnostic on every probe signal, including rejected cases; they do not bypass primary rejection. Compare fixed-grid peaks/alpha fractions with the clean two-sinusoid reference. No fitted threshold or clinical interpretation.',cases=cases,interpretation='Separate noiseless nine-case probe: fixed floor(fs/4)-sample rectangular pulse, sin-squared blink-like deflection, or 30 Hz sinusoid under the same envelope. Names describe teaching shapes, not validated physiological artifacts. Known injection window; primary epoch generator/noise stream/threshold unchanged. No tuning or clinical inference.')
 
 def run(config):
     validate_config(config)

@@ -28,8 +28,12 @@ Reject invalid threshold-study inputs.
 
 Known-support artifact-family probes.
 
+## Completed — 2026-11-20
+
+Spectral effects of injected artifacts.
+
 ## Next priorities
 
-1. Add independently seeded descriptive artifact-family uncertainty without threshold tuning.
-2. Add spectral effects of accepted injected artifacts with independent frequency references.
+1. Add independently seeded artifact-family sensitivity without threshold tuning.
+2. Compare spectral distortions across richer predeclared injection shapes.
 3. Review public-data provenance and subject splits.
