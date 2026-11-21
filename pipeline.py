@@ -38,7 +38,10 @@ def spectral_power(signal, fs, frequency, window="rectangular"):
     centered = [(x - offset)*w for x,w in zip(signal,weights)]
     re = sum(x * math.cos(2 * math.pi * frequency * i / fs) for i, x in enumerate(centered))
     im = sum(x * math.sin(2 * math.pi * frequency * i / fs) for i, x in enumerate(centered))
-    return 2 * (re * re + im * im) / (fs * sum(w*w for w in weights))
+    power = 2 * (re * re + im * im) / (fs * sum(w*w for w in weights))
+    if not math.isfinite(power):
+        raise ValueError("spectral power exceeds finite numerical range")
+    return power
 
 def signal_epoch(rng, fs, seconds, alpha, noise, artifact):
     xs = [alpha * math.sin(2 * math.pi * 10 * i / fs)

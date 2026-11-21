@@ -37,3 +37,7 @@ Spectral effects of injected artifacts.
 1. Add independently seeded artifact-family sensitivity without threshold tuning.
 2. Compare spectral distortions across richer predeclared injection shapes.
 3. Review public-data provenance and subject splits.
+
+## Completed — 2026-11-21
+
+Reject unrepresentable spectral power.

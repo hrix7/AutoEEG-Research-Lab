@@ -56,3 +56,9 @@ Added a separate nine-case noiseless study of rectangular pulse, blink-like defl
 ## 2026-11-20 — Spectral effects of injected artifacts
 
 Added rectangular/Hann fixed-grid peak and alpha-fraction diagnostics for every artifact-family probe plus its clean two-sinusoid reference. Rejected cases remain explicitly diagnostic and do not bypass the primary rejection pipeline. Independent complex-DFT, known-frequency and flat/undefined tests validate summaries. No random streams or thresholds were tuned. Full suite: 27 tests passed; pipeline generation, independent --verify and diff checks passed before publication. Workflow policy tests passed without workflow/permission changes.
+
+## 2026-11-21 — Reject unrepresentable spectral power
+
+A finite input can overflow the DFT power calculation. Reject nonfinite power before it becomes a JSON infinity or an undefined alpha ratio. Extreme-amplitude rectangular/Hann and diagnostic failure cases added. Ordinary synthetic values and seeds unchanged.
+
+Validation: full existing suite plus new tests (28 passed), pipeline generation and independent --verify, scoped diff review and git diff --check before publication. Hosted CI is followed after pushing. Existing read-only validation/publisher workflows unchanged; workflow-policy tests included.
