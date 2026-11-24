@@ -26,7 +26,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 63.37324022483098,
         "rejected": false,
-        "signal_sha256": "146efbc091cd71bbaf1fa56acd76a89f8f9e4926f641e7cccc136d554adeee2e",
+        "signal_sha256": "7e8ba6c44f6d4bb14011d1eefadc0f7b7cd47db00f74b9a5439395be745cb95f",
         "start_sample": 64
       },
       {
@@ -47,18 +47,18 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 133.37324022483097,
         "rejected": false,
-        "signal_sha256": "cf343c424949a8920619db2e3de4eedbf55a8d65541c55738926154b1e8b0907",
+        "signal_sha256": "0cfee9827c01cfbadaacebe144dc05e005f4abfaab83691631dda2f6b45bb5cd",
         "start_sample": 64
       },
       {
         "diagnostic_spectra": [
           {
-            "alpha_fraction": 0.09392531074906696,
+            "alpha_fraction": 0.09392531074906697,
             "peak_hz": 1,
             "window": "rectangular"
           },
           {
-            "alpha_fraction": 0.06844685314795793,
+            "alpha_fraction": 0.0684468531479579,
             "peak_hz": 1,
             "window": "hann"
           }
@@ -68,7 +68,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 283.37324022483097,
         "rejected": true,
-        "signal_sha256": "f89ec2200d2494d2fcdd63ec7f871998d8bb7af01901a52abca3ceaeed02c562",
+        "signal_sha256": "7ca540fdfaf943e2b97489c4a335caee02dcdf20320b1500d6472767e863f8f9",
         "start_sample": 64
       },
       {
@@ -89,7 +89,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 62.95309673289945,
         "rejected": false,
-        "signal_sha256": "e4fcfd0dde9a5596af689f323b9eca8d888b7c06ae5a2772f248cf5ef4f96efc",
+        "signal_sha256": "bfb4649fb17ba019e7660e01adff6100fc79b152984e7c8ea1e0a3839e2caf72",
         "start_sample": 64
       },
       {
@@ -100,7 +100,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
             "window": "rectangular"
           },
           {
-            "alpha_fraction": 0.2147131746137462,
+            "alpha_fraction": 0.21471317461374623,
             "peak_hz": 1,
             "window": "hann"
           }
@@ -110,18 +110,18 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 132.2805815470125,
         "rejected": false,
-        "signal_sha256": "32bb90d134dafb0716e04e15d2bc297616112de40f4322e7175c7a38f1bf3a43",
+        "signal_sha256": "45dae42f09717582d464d4841e724c7fa8d3d8166567d1dc85439072637f4e8c",
         "start_sample": 64
       },
       {
         "diagnostic_spectra": [
           {
-            "alpha_fraction": 0.07654554769487525,
+            "alpha_fraction": 0.07654554769487526,
             "peak_hz": 1,
             "window": "rectangular"
           },
           {
-            "alpha_fraction": 0.03949936880181495,
+            "alpha_fraction": 0.03949936880181493,
             "peak_hz": 1,
             "window": "hann"
           }
@@ -131,7 +131,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 281.6866201124155,
         "rejected": true,
-        "signal_sha256": "a11b519b0a58df317b32d737bc9ec88fa2fca310b515d8cb525ee43516e2edfc",
+        "signal_sha256": "cf116e144ab4fe4a29a6651406ab713ecfdff4a8ddc327b257ca8587919674b7",
         "start_sample": 64
       },
       {
@@ -152,13 +152,13 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 30,
         "peak_to_peak_uV": 72.55885636114562,
         "rejected": false,
-        "signal_sha256": "add873c6742ed89f9f83064f4220e1e4bd20e237cec15a8e9d675f65fb911b0d",
+        "signal_sha256": "6a6cb299e5f13a28c222540bacde0c575530492094c548ad141615945019ce2d",
         "start_sample": 64
       },
       {
         "diagnostic_spectra": [
           {
-            "alpha_fraction": 0.47332642066253433,
+            "alpha_fraction": 0.47332642066253416,
             "peak_hz": 10,
             "window": "rectangular"
           },
@@ -173,18 +173,18 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 100,
         "peak_to_peak_uV": 193.8014373208415,
         "rejected": true,
-        "signal_sha256": "583fe36f3f8fb83aa07b7394953285952b70383ca3af80e5fedbc8e57ef06d8d",
+        "signal_sha256": "4aa22459f510993479d382b877b6585fccd1913aa7abbe3ebfa3aa4e81c796a3",
         "start_sample": 64
       },
       {
         "diagnostic_spectra": [
           {
-            "alpha_fraction": 0.1319103099666308,
+            "alpha_fraction": 0.13191030996663078,
             "peak_hz": 30,
             "window": "rectangular"
           },
           {
-            "alpha_fraction": 0.0726278029367766,
+            "alpha_fraction": 0.07262780293677662,
             "peak_hz": 30,
             "window": "hann"
           }
@@ -194,7 +194,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "injected_amplitude_uV": 250,
         "peak_to_peak_uV": 482.893162469854,
         "rejected": true,
-        "signal_sha256": "b5b200d9053e401a4287e1118b59593544c97d391ae19a4b627136aec9d87a18",
+        "signal_sha256": "3f21ecba9f2b6f77f06b0c4dbf8b37f4b7f27e05be354404262aa6c0d92fa286",
         "start_sample": 64
       }
     ],
@@ -222,7 +222,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "382a8d886d513e55f0cd509f63a32717f4b2316f8af15ce8a84b56a04a6c4a8e"
+        "signal_sha256": "736066c592535213b1d77c1df0dd7ca13813ba255a9a8709943f75c44c763cf3"
       },
       {
         "amplitude_uV": 100,
@@ -231,7 +231,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "f14cc6f218a446d25b21bedb670259e142db9b40fa552c987c81fe677a9ff8ca"
+        "signal_sha256": "b91102cd20cf6cd83c726b07aedaa16a34b74f764dfd0aa604345329149711e5"
       },
       {
         "amplitude_uV": 250,
@@ -240,7 +240,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "f196f68480683ba44337e0daa10ff42bd08bf70093e75ea47e258094bd7f113b"
+        "signal_sha256": "1d23810ce22c9f1e59dfb1d9c5b7e5434094e7dd70d9ad2a31ebfb3e8609597b"
       },
       {
         "amplitude_uV": 30,
@@ -249,7 +249,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "0d0d58195fcf037c493b0e1ad2de1712dfbe57b6bcb9256cc5eac347b879ed77"
+        "signal_sha256": "274d10e063350d2b2bdf49948ed377c4410b7817b4f74116adad08a93339394f"
       },
       {
         "amplitude_uV": 100,
@@ -258,7 +258,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "d2523809fbc916407677c35003f60bfa921aab6d7ac585b6a87d13f711ad67d7"
+        "signal_sha256": "82116ebf4b12c8695151083965df136427c0a75844bbeaecb16b6a5d6b221bfc"
       },
       {
         "amplitude_uV": 250,
@@ -267,7 +267,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "01ca870b3b0203e39addebedf6ca69fb6fb4df4e0137c5a17951d3ce6e9cfea5"
+        "signal_sha256": "8903a15acce7f7b6acc59fb516cee40b5a07c62edc5a3bf31e71330ddb2c23f2"
       },
       {
         "amplitude_uV": 30,
@@ -276,7 +276,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "2f68580f21844e5fc0d202e164856017f4c9826ef20f7910fa58be076ecfe55a"
+        "signal_sha256": "45377d4eca1ead50875a6c017c1705b40f020c324f06682a245ec3158bad05a2"
       },
       {
         "amplitude_uV": 100,
@@ -285,7 +285,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "c761988bb2e6e40b7ab379037488aac9faa9bdd3a179e130e2838fd358f1f4a3"
+        "signal_sha256": "1af30dc044b2c330aee7fd1c599f3cf26e444aeae5455ad625dbdd6092fbb24f"
       },
       {
         "amplitude_uV": 250,
@@ -294,7 +294,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "bf0d5c763762810adaa7fea3c78f93324d1073f92c4bd7322b6bdc332088c69b"
+        "signal_sha256": "ab4676474b89eb88b2811fffc14f6d94ae262bb05d40631fde024f91d446e86d"
       },
       {
         "amplitude_uV": 30,
@@ -303,7 +303,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "cc39e448fce912ae4c78b6f0bf6e9f6f77233a75169518be16475686e98ff159"
+        "signal_sha256": "d291ec431136d51a60c6ca2b71e681770316ba1a09f04b7872e67aaef4b4b427"
       },
       {
         "amplitude_uV": 100,
@@ -312,7 +312,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "d67a58ac03be939891bb5fbf86d0d8f079d282305c8a2f50a638a4525e73b974"
+        "signal_sha256": "f7edb010fd4412869cadedd54ef792999070ec6b059e4aed3e294c50992b918b"
       },
       {
         "amplitude_uV": 250,
@@ -321,7 +321,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "964a880001740eded6a9ef91aadbdf626f250187b6dc37e00fdc568b64012098"
+        "signal_sha256": "955820224572b611e5adbd65428b0a25340a14fd2390361a05f6be4a7cafcee0"
       },
       {
         "amplitude_uV": 30,
@@ -330,7 +330,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "a69a0f98e1999db75bbdc49e645f1bb9cbbe6e95aa930681d32a56b8062df1c1"
+        "signal_sha256": "02b0eff51eb8ca0888a13e1287b347089a73bb15858d74583d6780efc8f207e8"
       },
       {
         "amplitude_uV": 100,
@@ -339,7 +339,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "6d1f801ac19d235d3338fa0bbd3c30a479e87c538f0e296a16e2dc41d51bd577"
+        "signal_sha256": "2b48c5bb366261766c30fb13003c126c688907dfc055fb364f790e2225aa4cbd"
       },
       {
         "amplitude_uV": 250,
@@ -348,7 +348,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "15ff238c13c8c9d59c87b55386c6eb200ca7cd11893eb9a7753b129d145e74ac"
+        "signal_sha256": "37b43a06fb680e4c9c1538da0bd3392d644094f1d369ff0807bdd08b695d60ec"
       },
       {
         "amplitude_uV": 30,
@@ -357,7 +357,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "89345bb6de5a5ffc2fbf81c27df1bc846e957ced844d41fee6ad874dbceb8e6f"
+        "signal_sha256": "3983bae2a540b2d979c904ea8934cdfb166f02e7ad29184865556087f57a77f6"
       },
       {
         "amplitude_uV": 100,
@@ -366,7 +366,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "a0149a1189f39ec82e25525ed2e96526999e892ef727668ecbb1ba2afbf05b83"
+        "signal_sha256": "73ed082056b47f7db18fa3de359fa07199ed206fc92e4d96c09ac60a38408da0"
       },
       {
         "amplitude_uV": 250,
@@ -375,7 +375,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "0cb0c71d15db6d6b680e01a4f2a9f6754b0bdd010e2812a278132c47d38ec166"
+        "signal_sha256": "606b0c0248f052634b099f845ef013af39da1e9799c9d859b9d0149cae1c4719"
       },
       {
         "amplitude_uV": 30,
@@ -384,7 +384,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "1819f54cb4e50f9bd9e04ab9317adb3f694d1c78bb147b4c2ee982eefbb15b04"
+        "signal_sha256": "b957c6097cf377ce730352ec2bb16063c0079745e1934cef6701f6f082a25a70"
       },
       {
         "amplitude_uV": 100,
@@ -393,7 +393,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "eef07b9a921e41ec24cdf2bdd81db4788e8adb479d5983d070c238285d858f39"
+        "signal_sha256": "0214c048cc2813287821f1b74a62892c93ebe81f468fee26473f23f25ea3c7c4"
       },
       {
         "amplitude_uV": 250,
@@ -402,7 +402,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "d2a60777e772daf1125728af9ef10684bcbf87cf21991a78d1d5990e41e34b6d"
+        "signal_sha256": "8f7ee5f6d2d08adddec5b1c22b545426701dcebe3d4a1ec769dfba353470ba8c"
       },
       {
         "amplitude_uV": 30,
@@ -411,7 +411,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "272a25dfb64e734b1f2e2ee9d554bf56bdbccc4855d0c6ae7248760774fef40a"
+        "signal_sha256": "674f43aa8f6360b5c23e9139d7b329d297480d15f234817f1d90dd87fc910d33"
       },
       {
         "amplitude_uV": 100,
@@ -420,7 +420,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "d87272502986ce3b2e98e52cd19f88cfcd81d3609c3f54f64239cf6314ebd46d"
+        "signal_sha256": "893090909cc315ef36d183ea885dd7ac897314f91f471b545e6e61e0b07d0734"
       },
       {
         "amplitude_uV": 250,
@@ -429,7 +429,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "81b00228c443a599d18986a1ec4c9d87d686f219a9347f98ab3d0aba51186a57"
+        "signal_sha256": "a359f9c0e2687144881e8b07bdbfd4ce5b15a1d09d9beba319f57a4c45be8edc"
       },
       {
         "amplitude_uV": 30,
@@ -438,7 +438,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6729,
-        "signal_sha256": "b02643209a60e302f919eacbb95b46fa3285e9efa32ded1c9ba59874fa2e6379"
+        "signal_sha256": "5fac3b4e9a15d3c7390e97b045cc9b16f8d89b21ea4367fd1c52b8419283c44d"
       },
       {
         "amplitude_uV": 100,
@@ -447,7 +447,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "9bf0be1c2629baa718af963657edebc5ce6713b2775aee23b16844bd2df4d6d1"
+        "signal_sha256": "2595e987b0bbf380b0493d7e19feac848d3473540ac2b099a56a881b0e5ae047"
       },
       {
         "amplitude_uV": 250,
@@ -456,7 +456,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6729,
-        "signal_sha256": "ff1dba1f516d714ec3c88fa22197a90fcad0f9519eefdafc2d7541c691d904a5"
+        "signal_sha256": "a637a57aaee0909cee2264e5854c2c0c9c893dd6c29d381e212224f1f578d9df"
       },
       {
         "amplitude_uV": 30,
@@ -465,7 +465,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "0feee8be287c9997f57da42f87a39484a610f83e04455a62428e7ee941c44f71"
+        "signal_sha256": "fe8765c056f6d133c14f3648049c236eab4446d93bd0089e066d54cb7e8d8c56"
       },
       {
         "amplitude_uV": 100,
@@ -474,7 +474,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "9e5d15b0007b18128fa09f58f6d034f37521562d09ed485301572c71df5ab9ac"
+        "signal_sha256": "a9401b96f758641c7973ddf7a18802392981c9c2bccfbaccfb798519470b18f3"
       },
       {
         "amplitude_uV": 250,
@@ -483,7 +483,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "ead006605add229e62ca3050ea60e5fdc642b56b7c8d7f34a9202e9133a5e530"
+        "signal_sha256": "84f450e66f76c4307ddda7eda7d6dee33285542d7d8f7a104a90a2c93219a3c9"
       },
       {
         "amplitude_uV": 30,
@@ -492,7 +492,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "599ab78702f80416d0f2811e4c2a932f531fd5ffc2b1d9e72042a50bdebf70d2"
+        "signal_sha256": "e4c45f1cf869f276cf4c937463132b2613064321ef1f3f8d7693698914c1f0a5"
       },
       {
         "amplitude_uV": 100,
@@ -501,7 +501,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "d9ec89875833f62f27f18d56c89b06372beec12f0b0072c382d7be168618022b"
+        "signal_sha256": "b0fb948c6e912099bccd228e0ffbb1141a3cd2b48f6ed62109c627c610d3816f"
       },
       {
         "amplitude_uV": 250,
@@ -510,7 +510,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "652cbb6ac369b05480067d1c415deb1fb8e453fbde57765d874444f8d612e969"
+        "signal_sha256": "3af83df502776c4c1cd375c1d7167d1e29b41031706cff93a2d5695f3701a0fc"
       },
       {
         "amplitude_uV": 30,
@@ -519,7 +519,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "ace87b549f93bdcdb4d2b1301e75bbd23ddd6f76bd190ae965b234ba8c0a6429"
+        "signal_sha256": "4bdf36690cb8c8288f7a2f13d707909cb87598a0a4ee5978802a38b3802e70fc"
       },
       {
         "amplitude_uV": 100,
@@ -528,7 +528,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "12613df8d0827c2573837f410f5bc0e3c98830281c1cf5a2d28fb0af4ed62b5f"
+        "signal_sha256": "6edee2e7245cdadc8cf6f2b7d1f0d085133f10ac5611ef8dff2a392affab67d4"
       },
       {
         "amplitude_uV": 250,
@@ -537,7 +537,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "1c503ef6dba81cfe267f5cc549589e16781b965ef5369c371e43c8e3c38f43be"
+        "signal_sha256": "b9fd7272bc2ac812d9f4af77de0253da5d5adfd635eea43c29ad20ae10c36465"
       },
       {
         "amplitude_uV": 30,
@@ -546,7 +546,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "5f2041b737c65610d53a7d16ab0b6ce798185988124e2050ff6aab81672f3654"
+        "signal_sha256": "0011691680328d7c02d48176d7c5a204652f857cc10fc21d08bb840272146eb1"
       },
       {
         "amplitude_uV": 100,
@@ -555,7 +555,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "9e329eb89bcf6a4dd70ac9f8d45000f44539aab8b78b5755423d603a1e5d548e"
+        "signal_sha256": "2d31a0d0e8f749f2a8d7972ea73b9b75ed3166d8973f923fa37eb78756c3df43"
       },
       {
         "amplitude_uV": 250,
@@ -564,7 +564,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "af40fcf7cbb94f5dae1664323553068792253f349edce770326d03ae6932877c"
+        "signal_sha256": "c062011ca96847d6b341c9e316bdf0e7524b625a2f7e1d8ec311d2c932fbbe1f"
       },
       {
         "amplitude_uV": 30,
@@ -573,7 +573,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "57c44ea55f7b03c76dda338663eb2dfee05969bf7052d4cd98f99b7de4f55e7c"
+        "signal_sha256": "52403d45a3eaa93784dcd1243a91dbbb0a307e3a56e979bf5ac0bb77d5c97ab5"
       },
       {
         "amplitude_uV": 100,
@@ -582,7 +582,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "8079623083991e5da646166f13dfab669491790882b9f43c0a26bc43461b679b"
+        "signal_sha256": "484d6ef14632441c0b8389ef364809a639c4c5c24bd3ab3fff2bbaf1cdb3acbd"
       },
       {
         "amplitude_uV": 250,
@@ -591,7 +591,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "47292ee4b0e04c7273ff414fd368d749eb2b369f1dc7a4c36a0210b3e040cd3f"
+        "signal_sha256": "72d207b536d772abf455afbad454af7b5c9bf3a81ee4a2e31ecf4971115cc1bc"
       },
       {
         "amplitude_uV": 30,
@@ -600,7 +600,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "f277340f10c4ff40435c04a247892efc2741a378a9ac14ea726dfaca15fc01a0"
+        "signal_sha256": "c0f4c89dc72f193becc2fd96f83d8fa606c5b825df09c021ae18d101e9fbcb94"
       },
       {
         "amplitude_uV": 100,
@@ -609,7 +609,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "0b05e0894c306ff5cffb98ca160248c838ef980ea5e91f1aab0b497de4ee3a66"
+        "signal_sha256": "1f9c996776bcb147a39eb0bae4f84b8af66e29b4224a70a8148acdb620c004c3"
       },
       {
         "amplitude_uV": 250,
@@ -618,7 +618,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "b778866fbf3e353adc67a7ee258522d93bb79b35f64e91320dc26eec8b8a4c97"
+        "signal_sha256": "0a6bbb1f7a0f4ef92474bfb4899323c731ac736938cc7e397521fad1c7cb2761"
       },
       {
         "amplitude_uV": 30,
@@ -627,7 +627,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "23c231031e0d6af55f0d4db8deb6fe0fea041194910e26b577f3f87d295d4336"
+        "signal_sha256": "caf6064d38f155a44d7a8120fd268eb9ed4ac61d37e68087cfd008e6f0065d11"
       },
       {
         "amplitude_uV": 100,
@@ -636,7 +636,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "58d65ea276c8091b6e804be3769401c71985335277c6eaec4ae2a6ac277d6013"
+        "signal_sha256": "c166bcf8c8bef04991d01701af40709a6ab8034e805548a73f4ff3a15c006602"
       },
       {
         "amplitude_uV": 250,
@@ -645,7 +645,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "20cf6d008b8c4415934a60a2c77074d4d5608d2b3e096a2bef91d5b418864071"
+        "signal_sha256": "fbd3ea01e2af8318d6a3442a28f6955bfb774c254fdae7368aad616dd835e089"
       },
       {
         "amplitude_uV": 30,
@@ -654,7 +654,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "32f2e65d93a25812f563a88c3abf1c9069c7cf21862f0820af3bbcd2390e9369"
+        "signal_sha256": "deca279f054dbd234af4e5607c0437272129298a95f0c6c9fadc499afac9a8b2"
       },
       {
         "amplitude_uV": 100,
@@ -663,7 +663,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "7006abe9e0d0bb741a7cdce4ae8b76b3e7b2a7be5f130e9223b42cdbd4658864"
+        "signal_sha256": "2a94869c688dda94296370ef82ef88aab2ef73c35ebb472ed791af970bae5718"
       },
       {
         "amplitude_uV": 250,
@@ -672,7 +672,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "449d3191e79da5219891335811aa064467d124605f82c73f9b4de309ba53e8e8"
+        "signal_sha256": "c83c891eb28523f7b9c2382f2e948c9a88e71ac16d38b63285a33bc33015b5d9"
       },
       {
         "amplitude_uV": 30,
@@ -681,7 +681,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6730,
-        "signal_sha256": "b1c88fa7858a7853519c4c695b8d7e36a632c6aa537c87c90ea2b24631289d70"
+        "signal_sha256": "a14a3362625a982a149848cfe23907a2575e78d8db027e08c12979f2456517e8"
       },
       {
         "amplitude_uV": 100,
@@ -690,7 +690,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "b1fade6b469632d24a9b1ccf1da3a8679d7433af294e170d98299cf4c7437e10"
+        "signal_sha256": "e8caeff7b51c4c84e5f9bea7091762ac47e7050edf93b73e7049c0a027ce3ba2"
       },
       {
         "amplitude_uV": 250,
@@ -699,7 +699,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6730,
-        "signal_sha256": "57d92f5cc1b4271de6f256f56498b06e3dd8c41212e7400a98e516dee5f92674"
+        "signal_sha256": "216a50471ac074e6efb1fb5d0d8eef1a2d46188c483b51b9a5f795454b3c6dac"
       },
       {
         "amplitude_uV": 30,
@@ -708,7 +708,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "02ac88cf7498ea095260d0b69e3213ea63ca0629c1906864a5df3ea3afaf73f2"
+        "signal_sha256": "df7ae702c3ae3d16e18968b519e60ef34bb8c719004cfa1f9381dc632ff5df04"
       },
       {
         "amplitude_uV": 100,
@@ -717,7 +717,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "ce768326a095ab4fbb4188c9386ff77d4f8626cd9fee622b4bbe841769b883a6"
+        "signal_sha256": "65b0c4b3999842c8a83e4b73b9060b2220f0c7c99a2d27de206c334cbefa63a6"
       },
       {
         "amplitude_uV": 250,
@@ -726,7 +726,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "6368045dbb3de646b5d0789434fc61a9241e20f88b3e0512e4e6d979c346b165"
+        "signal_sha256": "85abc0372ffa160b986a1040a86db55235ab165ffd0c2e551f07e2948e990150"
       },
       {
         "amplitude_uV": 30,
@@ -735,7 +735,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "b038a0bcf0eba7c4622d0607ec885c49db948bb7131ea4f2ad6c5e18213de300"
+        "signal_sha256": "a33ce7fdb24eb2741f10f835f3cfbab590b3f71e76dbec1813a4e174b9e38327"
       },
       {
         "amplitude_uV": 100,
@@ -744,7 +744,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "b832696413ef2dd57b507cec96d846bf2240a2a619e4fa5fa102eac536399552"
+        "signal_sha256": "b9fcf4f2385be32ab9c98d90c9f668676978d10db8cc8c9be6b89dc640f11c45"
       },
       {
         "amplitude_uV": 250,
@@ -753,7 +753,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "92da341390fc0186fbd2a3493a2de05eaa773eab592ddfac4013e359042ae39e"
+        "signal_sha256": "e6cf16198b1f61fa516df1f88d9ca802350d79debddecec8d8818f3f0e4de9d7"
       },
       {
         "amplitude_uV": 30,
@@ -762,7 +762,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "1f8f06f55d6d816a8dd113d74533b9ff424d3fdf6147cf4620143bef9f559a9f"
+        "signal_sha256": "a393e879246d0e1a8b8c7cfd55b30a66f1ed7d07764b75359914f39afc82cbb2"
       },
       {
         "amplitude_uV": 100,
@@ -771,7 +771,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "227c818adf88adcaa22ee98c0416bd437b41f97a7a94fa44b0a45ab93aa04373"
+        "signal_sha256": "b43ab158657be5c30b60a8513ab49e8854fa3f0889e6f45dca740992461fe1ef"
       },
       {
         "amplitude_uV": 250,
@@ -780,7 +780,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 2,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "5d1af8d9df7b6bae4729515ac4e056329cd3189d0410d7f1d5ac022d2dc08e2f"
+        "signal_sha256": "c87558896bc541a4241d8d2043ff0bb10a2432a7da428fa9b5d2768f13647528"
       },
       {
         "amplitude_uV": 30,
@@ -789,7 +789,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "f073dcd20c78ceaece7540cb64c6bc42e6e874eff8a9992f91ee4d645d84d9e9"
+        "signal_sha256": "f417402bbdc05133207e511fa313e76e8361dc8a7a1b60b3e8ca13776f3b7073"
       },
       {
         "amplitude_uV": 100,
@@ -798,7 +798,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "96472a5b7c07108eebbd7774c0675850884a7d06318503ea122f4cdc33caccb2"
+        "signal_sha256": "f8ec2bbf5f7557e6b2e6f8a778bdc776268da477b39e0da1ff440c27163ec6c3"
       },
       {
         "amplitude_uV": 250,
@@ -807,7 +807,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "1d84edb6a6b872de1c19414e2ce78073fab2b462535c2e131c3bde2410898163"
+        "signal_sha256": "73af2153b70e616cbdc510fee2d51bddee11ef6e7916bbd587d8ef608d8ab301"
       },
       {
         "amplitude_uV": 30,
@@ -816,7 +816,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "79cbf85f9835c3556a627cdabf46e6d9aa744ec869baffc9b73503747fbb804a"
+        "signal_sha256": "e100e2e6d91cbdf1cfd50e94e58d2353bd307a868971496e155eb8c6219d5a2a"
       },
       {
         "amplitude_uV": 100,
@@ -825,7 +825,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "c8ecb71e2ad99421441efc4bca2f3464d91b5f00962b4367967cc113b933a43a"
+        "signal_sha256": "1b1e13bc41c28e8cf15d1b077388268b2aa6ff6cb0c1f8956360588788a2ff98"
       },
       {
         "amplitude_uV": 250,
@@ -834,7 +834,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "ee758dc0bd9e2ddbf941c181dfcc40847c3a73c96fbe187edba658bff8d6d251"
+        "signal_sha256": "037174ec4321e26578bcb1fe360caaf7b3254d49cb92d2c6f2b661b6460e0273"
       },
       {
         "amplitude_uV": 30,
@@ -843,7 +843,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "56cb4c03f6e91fdb8b0675bbaf0775be6e3e6a2217e6a6853e17874089fb056e"
+        "signal_sha256": "8cc7a174b66ed799eb312e1bd16b7a3654e96aa2063ec03bcc8ffcb34d359436"
       },
       {
         "amplitude_uV": 100,
@@ -852,7 +852,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "ac0b5d4e051d56727aa3a3f32ec359eb7b80ae4d9ffea8bd007cbb1e8b56cfb1"
+        "signal_sha256": "a94766059e63f5083f5e6001b5154120fa81ae0433ed84b2683aaac9e93ba6d1"
       },
       {
         "amplitude_uV": 250,
@@ -861,7 +861,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 8,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "d31bb9e3f2e4b54b47b625a896f65b81e3d1318140d7bdc085d942946a09a94b"
+        "signal_sha256": "7a2150f5f1b5aae5c9dbe12d80b5b1440618077a123eaf399ec6022dfe9b802f"
       },
       {
         "amplitude_uV": 30,
@@ -870,7 +870,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "516f35affdce22f45da8486505123d7e5361f28ab090f0db717ad171c35a5b91"
+        "signal_sha256": "ba3ac0f7e16faa0b3c05aaf29122d155d3c6403fa2c56b07954121cf35ffa04d"
       },
       {
         "amplitude_uV": 100,
@@ -879,7 +879,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "fc9ea45edb6cfd3e9d92e9ba6fcf58e1696275d257520159cf88bb5122d281a7"
+        "signal_sha256": "d14433fa242cce8ee6fbc62f0d2e5e5a6981b164001f2b88f5f7941c81b1b96b"
       },
       {
         "amplitude_uV": 250,
@@ -888,7 +888,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "05f108ac1f0b8d166248ba273e32d10705b87809ec19abf80e4230ed7b366cfe"
+        "signal_sha256": "030ea072643d5fe9533ec51be560227569b06d6456c897c944f47da1febd6ae9"
       },
       {
         "amplitude_uV": 30,
@@ -897,7 +897,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "01b9b1a1fa139e48ef7f4a79ce3864e3fde3e239f16e996e45caba323d2afeeb"
+        "signal_sha256": "08185498d095719d4f8761c81dc87ad418b591884ac80f408bfa6afe7875b54c"
       },
       {
         "amplitude_uV": 100,
@@ -906,7 +906,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "4a128cc5d3c998f25b0d132551b33623ccf4cc68026bc8e19db4d353b447bdec"
+        "signal_sha256": "ebc72c55406f3dd6fdff19ca54be33d1b17facad38ee267e2b75969cb693f66a"
       },
       {
         "amplitude_uV": 250,
@@ -915,7 +915,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "5b01409abfde8ea9093acf8239f995da188a64fdb0f1c19a93c0e7adfdaa66a7"
+        "signal_sha256": "a084c27db5238d3a1be45da6816f075f7a19e9c7134b34bdd8a749f4c5abdafc"
       },
       {
         "amplitude_uV": 30,
@@ -924,7 +924,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": false,
         "seed": 6731,
-        "signal_sha256": "8f7731e58b842dd872cb49fb8e51b4a1c857ce447ebc947e878022701c5e4b44"
+        "signal_sha256": "4be319b6b136488be06af7b5913862365ea9321acbaf36e04aa4758f09c9ad1c"
       },
       {
         "amplitude_uV": 100,
@@ -933,7 +933,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "12eab0b07298ebed98b404df190a9dde1a7db2e6a7797ce02e15f2c9a6bdda7c"
+        "signal_sha256": "5e953b82f7c0c4b8bd428b5d6fed210893a2814440b2bed8c0922c2baa949119"
       },
       {
         "amplitude_uV": 250,
@@ -942,7 +942,7 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
         "noise_sd_uV": 16,
         "rejected": true,
         "seed": 6731,
-        "signal_sha256": "fafd9842062d6718b4ec1d2ff6035cf8f2d954024bc50f4918dc0ca00fdfa56f"
+        "signal_sha256": "ec2d175b4206ec75e8ed547badaa09ee4e960cc85b77083cc4cc32ea625e5e84"
       }
     ],
     "method": "Three predeclared noise seeds seed+5000..5002; paired base noise across nine teaching artifacts and matched clean comparator. Fixed rejection threshold, no tuning. Separate RNG from primary epochs. Descriptive finite scenario grid, not population sensitivity or clinical validation."
@@ -1043,9 +1043,9 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
       "artifact_injected": 4,
       "artifact_true_negatives": 12,
       "artifact_true_positives": 4,
-      "hann_mean_alpha_fraction": 0.5445426197932011,
+      "hann_mean_alpha_fraction": 0.5445426197932012,
       "hann_mean_peak_hz": 10,
-      "mean_alpha_fraction": 0.6285293325330542,
+      "mean_alpha_fraction": 0.6285293325330541,
       "mean_peak_hz": 10,
       "noise_sd_uV": 16,
       "rejected": 4,
@@ -1087,13 +1087,13 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
     "estimates": [
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 0.06283966699555597,
+        "far_grid_fraction": 0.06283966699555599,
         "peak_hz": 10,
         "window": "rectangular"
       },
       {
         "absolute_peak_error_hz": 0.3000000000000007,
-        "far_grid_fraction": 2.601673546983745e-05,
+        "far_grid_fraction": 2.6016735469837423e-05,
         "peak_hz": 10,
         "window": "hann"
       }
@@ -1147,4 +1147,4 @@ Generated from `config.json` by `pipeline.py`. Metrics are computed, never hand-
 }
 ```
 
-Result SHA-256: `a2166d296305722eb9c8486cf2c8029be19ae91498cca1a24d4d81ce624bdf45`
+Result SHA-256: `d5e4333ccce7c25745b0e9045cb825a7cad1998233b50ff96f340ee302d65fcd`
