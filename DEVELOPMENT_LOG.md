@@ -62,3 +62,9 @@ Added rectangular/Hann fixed-grid peak and alpha-fraction diagnostics for every 
 A finite input can overflow the DFT power calculation. Reject nonfinite power before it becomes a JSON infinity or an undefined alpha ratio. Extreme-amplitude rectangular/Hann and diagnostic failure cases added. Ordinary synthetic values and seeds unchanged.
 
 Validation: full existing suite plus new tests (28 passed), pipeline generation and independent --verify, scoped diff review and git diff --check before publication. Hosted CI is followed after pushing. Existing read-only validation/publisher workflows unchanged; workflow-policy tests included.
+
+## 2026-11-24 — Paired artifact-family noise sensitivity
+
+Three predeclared local noise seeds and each configured noise level now evaluate nine teaching injection cases against matched clean signals. Fixed threshold, signal hashes, separate RNG and no retuning or population/clinical sensitivity claim. Tests independently reconstruct every signal/hash/rejection and check zero-noise invariance/global-RNG isolation.
+
+Validation before publication: 30 full-suite tests passed, pipeline regeneration and independent --verify passed, scoped diff/checksum review and git diff --check passed. Workflow policy tests included; workflows and permissions unchanged. Hosted validation followed after pushing.

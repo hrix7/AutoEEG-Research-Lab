@@ -110,6 +110,21 @@ def diagnostic_spectra(samples,fs):
         summaries.append(dict(window=window,peak_hz=max(powers,key=powers.get) if total else None,alpha_fraction=sum(powers[f] for f in range(8,13))/total if total else None))
     return summaries
 
+def artifact_noise_probe(config):
+    """Separate fixed-seed paired noise probe; never tunes the primary rule."""
+    fs=config['fs_hz'];n=fs*config['seconds'];cases=[]
+    clean=[config['alpha_uV']*math.sin(2*math.pi*10*i/fs)+4*math.sin(2*math.pi*20*i/fs) for i in range(n)]
+    for seed in range(config['seed']+5000,config['seed']+5003):
+        for noise in config['noise_levels']:
+            rng=random.Random(seed)
+            base=[v+rng.gauss(0,noise) for v in clean]
+            clean_rejected=max(base)-min(base)>config['peak_to_peak_limit_uV']
+            for family in ('pulse','blink','muscle'):
+                for amplitude in (30,100,250):
+                    x=[a+b for a,b in zip(base,artifact_component(fs,config['seconds'],family,amplitude))]
+                    cases.append(dict(seed=seed,noise_sd_uV=noise,family=family,amplitude_uV=amplitude,clean_rejected=clean_rejected,rejected=max(x)-min(x)>config['peak_to_peak_limit_uV'],signal_sha256=digest(encode(x))))
+    return dict(cases=cases,method='Three predeclared noise seeds seed+5000..5002; paired base noise across nine teaching artifacts and matched clean comparator. Fixed rejection threshold, no tuning. Separate RNG from primary epochs. Descriptive finite scenario grid, not population sensitivity or clinical validation.')
+
 def artifact_family_probe(config):
     fs=config['fs_hz'];seconds=config['seconds'];n=fs*seconds
     base=[config['alpha_uV']*math.sin(2*math.pi*10*i/fs)+4*math.sin(2*math.pi*20*i/fs) for i in range(n)]
@@ -158,7 +173,7 @@ def run(config):
                             hann_mean_alpha_fraction=mean(hann_ratios) if hann_ratios else None,
                             mean_peak_hz=mean(peaks) if peaks else None,
                             mean_alpha_fraction=mean(ratios) if ratios else None))
-    return rows, {'artifact_family_probe':artifact_family_probe(config), 'conditions': results, 'off_bin_probe':off_bin_probe(config['fs_hz'],config['seconds']), 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
+    return rows, {'artifact_noise_probe':artifact_noise_probe(config), 'artifact_family_probe':artifact_family_probe(config), 'conditions': results, 'off_bin_probe':off_bin_probe(config['fs_hz'],config['seconds']), 'interpretation': 'Spectral recovery on generated sinusoids only; no disease labels or patient data.'}
 
 def experiment():
     config = json.loads((ROOT / 'config.json').read_text())

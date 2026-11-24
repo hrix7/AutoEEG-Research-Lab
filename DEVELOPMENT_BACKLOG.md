@@ -41,3 +41,12 @@ Spectral effects of injected artifacts.
 ## Completed — 2026-11-21
 
 Reject unrepresentable spectral power.
+
+## Completed — 2026-11-24
+
+Paired artifact-family noise sensitivity.
+
+## Current ordered next steps
+
+1. Compare spectral distortion over the same predeclared noise cases without selecting thresholds on displayed results.
+2. Review public-data terms, exact release/checksums and subject mappings before ingestion; keep synthetic and public-data evaluation distinct.

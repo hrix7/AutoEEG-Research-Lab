@@ -85,3 +85,7 @@ Added rectangular/Hann fixed-grid peak and alpha-fraction diagnostics for every 
 ### November 21 development
 
 A finite input can overflow the DFT power calculation. Reject nonfinite power before it becomes a JSON infinity or an undefined alpha ratio. Extreme-amplitude rectangular/Hann and diagnostic failure cases added. Ordinary synthetic values and seeds unchanged.
+
+### November 24 development
+
+Three predeclared local noise seeds and each configured noise level now evaluate nine teaching injection cases against matched clean signals. Fixed threshold, signal hashes, separate RNG and no retuning or population/clinical sensitivity claim. Tests independently reconstruct every signal/hash/rejection and check zero-noise invariance/global-RNG isolation.
