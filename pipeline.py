@@ -119,10 +119,11 @@ def artifact_noise_probe(config):
             rng=random.Random(seed)
             base=[v+rng.gauss(0,noise) for v in clean]
             clean_rejected=max(base)-min(base)>config['peak_to_peak_limit_uV']
+            clean_spectra=diagnostic_spectra(base,fs)
             for family in ('pulse','blink','muscle'):
                 for amplitude in (30,100,250):
                     x=[a+b for a,b in zip(base,artifact_component(fs,config['seconds'],family,amplitude))]
-                    cases.append(dict(seed=seed,noise_sd_uV=noise,family=family,amplitude_uV=amplitude,clean_rejected=clean_rejected,rejected=max(x)-min(x)>config['peak_to_peak_limit_uV'],signal_sha256=digest(encode(x))))
+                    cases.append(dict(clean_diagnostic_spectra=clean_spectra,diagnostic_spectra=diagnostic_spectra(x,fs),seed=seed,noise_sd_uV=noise,family=family,amplitude_uV=amplitude,clean_rejected=clean_rejected,rejected=max(x)-min(x)>config['peak_to_peak_limit_uV'],signal_sha256=digest(encode(x))))
     return dict(cases=cases,method='Three predeclared noise seeds seed+5000..5002; paired base noise across nine teaching artifacts and matched clean comparator. Fixed rejection threshold, no tuning. Separate RNG from primary epochs. Descriptive finite scenario grid, not population sensitivity or clinical validation.')
 
 def artifact_family_probe(config):

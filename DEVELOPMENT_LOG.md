@@ -68,3 +68,9 @@ Validation: full existing suite plus new tests (28 passed), pipeline generation 
 Three predeclared local noise seeds and each configured noise level now evaluate nine teaching injection cases against matched clean signals. Fixed threshold, signal hashes, separate RNG and no retuning or population/clinical sensitivity claim. Tests independently reconstruct every signal/hash/rejection and check zero-noise invariance/global-RNG isolation.
 
 Validation before publication: 30 full-suite tests passed, pipeline regeneration and independent --verify passed, scoped diff/checksum review and git diff --check passed. Workflow policy tests included; workflows and permissions unchanged. Hosted validation followed after pushing.
+
+## 2026-11-25 — Paired noisy-artifact spectra
+
+Each predeclared noise/artifact case now retains both its matched clean and injected rectangular/Hann spectral summaries, including rejected cases as diagnostic-only values. Fixed grid/rule and separate RNG remain unchanged. An independent complex DFT checks the matched clean fraction; rejected-case finiteness is checked. No rejection bypass or clinical spectrum claim.
+
+Pre-publication validation: 32 full-suite tests passed; pipeline generation and independent --verify, scoped diff and checksum review, git diff --check passed. Existing workflow policy tests included; no permission/workflow changes. Hosted CI followed after publication.

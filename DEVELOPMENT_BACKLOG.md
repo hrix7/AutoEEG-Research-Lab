@@ -50,3 +50,12 @@ Paired artifact-family noise sensitivity.
 
 1. Compare spectral distortion over the same predeclared noise cases without selecting thresholds on displayed results.
 2. Review public-data terms, exact release/checksums and subject mappings before ingestion; keep synthetic and public-data evaluation distinct.
+
+## Completed — 2026-11-25
+
+Paired noisy-artifact spectra.
+
+## Current next steps
+
+1. Summarize paired spectral changes over the finite scenario grid without population confidence claims.
+2. Review real-data license/version/checksums and subject mappings before ingestion.

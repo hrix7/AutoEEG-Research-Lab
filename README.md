@@ -89,3 +89,7 @@ A finite input can overflow the DFT power calculation. Reject nonfinite power be
 ### November 24 development
 
 Three predeclared local noise seeds and each configured noise level now evaluate nine teaching injection cases against matched clean signals. Fixed threshold, signal hashes, separate RNG and no retuning or population/clinical sensitivity claim. Tests independently reconstruct every signal/hash/rejection and check zero-noise invariance/global-RNG isolation.
+
+### November 25 development
+
+Each predeclared noise/artifact case now retains both its matched clean and injected rectangular/Hann spectral summaries, including rejected cases as diagnostic-only values. Fixed grid/rule and separate RNG remain unchanged. An independent complex DFT checks the matched clean fraction; rejected-case finiteness is checked. No rejection bypass or clinical spectrum claim.
