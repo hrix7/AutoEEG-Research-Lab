@@ -107,6 +107,7 @@ def diagnostic_spectra(samples,fs):
     for window in ('rectangular','hann'):
         powers={f:spectral_power(samples,fs,f,window) for f in range(1,41)}
         total=sum(powers.values())
+        if not math.isfinite(total):raise ValueError("diagnostic total spectral power exceeds finite range")
         summaries.append(dict(window=window,peak_hz=max(powers,key=powers.get) if total else None,alpha_fraction=sum(powers[f] for f in range(8,13))/total if total else None))
     return summaries
 

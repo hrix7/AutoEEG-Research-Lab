@@ -59,3 +59,12 @@ Paired noisy-artifact spectra.
 
 1. Summarize paired spectral changes over the finite scenario grid without population confidence claims.
 2. Review real-data license/version/checksums and subject mappings before ingestion.
+
+## Completed — 2026-11-26
+
+Reject overflowing spectral totals.
+
+## Current ordered next steps
+
+1. Summarize paired spectral changes over finite scenarios without population intervals.
+2. Review official data terms/version/checksums and subject mapping before any real-data ingestion.

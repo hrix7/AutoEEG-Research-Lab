@@ -93,3 +93,7 @@ Three predeclared local noise seeds and each configured noise level now evaluate
 ### November 25 development
 
 Each predeclared noise/artifact case now retains both its matched clean and injected rectangular/Hann spectral summaries, including rejected cases as diagnostic-only values. Fixed grid/rule and separate RNG remain unchanged. An independent complex DFT checks the matched clean fraction; rejected-case finiteness is checked. No rejection bypass or clinical spectrum claim.
+
+### November 26 development
+
+Reject an unrepresentable diagnostic power total even when every individual bin is finite, preventing a misleading zero/undefined alpha fraction. Mocked extreme finite-bin and representable-total tests verify fail-closed behavior without changing ordinary spectra.

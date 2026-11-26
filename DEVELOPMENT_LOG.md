@@ -74,3 +74,9 @@ Validation before publication: 30 full-suite tests passed, pipeline regeneration
 Each predeclared noise/artifact case now retains both its matched clean and injected rectangular/Hann spectral summaries, including rejected cases as diagnostic-only values. Fixed grid/rule and separate RNG remain unchanged. An independent complex DFT checks the matched clean fraction; rejected-case finiteness is checked. No rejection bypass or clinical spectrum claim.
 
 Pre-publication validation: 32 full-suite tests passed; pipeline generation and independent --verify, scoped diff and checksum review, git diff --check passed. Existing workflow policy tests included; no permission/workflow changes. Hosted CI followed after publication.
+
+## 2026-11-26 — Reject overflowing spectral totals
+
+Reject an unrepresentable diagnostic power total even when every individual bin is finite, preventing a misleading zero/undefined alpha fraction. Mocked extreme finite-bin and representable-total tests verify fail-closed behavior without changing ordinary spectra.
+
+Pre-publication: 34 full-suite tests passed, regeneration and independent --verify, scoped diff/checksum review and git diff --check passed. Workflow policy tests included; no permission/workflow changes. Hosted validation followed after push.
